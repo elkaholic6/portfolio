@@ -1,0 +1,155 @@
+@keyframes slideup {
+  from {transform: translateY(50px);
+      opacity: 0;}
+  to {transform: translateY(0);
+      opacity: 1;}
+}
+
+@keyframes shimmer {
+  100% {-webkit-mask-position:left}
+}
+
+
+.bio {
+    background-image: linear-gradient(to top right, rgb(24, 24, 24), rgb(40, 40, 40));
+    min-height: 100vh;
+}
+
+.bio_container {
+    padding: 20px 0 0;
+    height: 100%;
+}
+
+.shimmer {
+  display:inline-block;
+  mask:linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
+  background-repeat: no-repeat;
+  animation: shimmer 4s infinite;
+}
+
+.bio_reveal {
+  animation-name: slideup;
+  animation-duration: 2s;
+}
+
+.bio_reveal_inactive {
+  opacity: 0;
+}
+
+p.bio_wrapper {
+    color: rgba(75, 73, 73, 0.322);
+    display: flex;
+    justify-content: end;
+    position: relative;
+    font-weight: 800;
+    font-size: 250px;
+    height: 100%;
+    width: 98%;
+    z-index: 0;
+    padding-top: 10px;
+}
+
+p.bio_paragraph-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+    font-size: larger;
+    font-family:"Lucida Console", Courier, monospace;
+    color: rgb(202, 202, 202); 
+    padding: 20px;
+    width: 50%;
+}
+
+.bio_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.face_pic {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.pic_parent {
+  display: flex;
+  justify-content: end;
+  padding-top: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+.pic_child {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  padding-right: 20px;
+  filter: grayscale(100%);
+}
+
+.pic_child:hover {
+  filter: grayscale(0%);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1068px) {
+    p.bio_wrapper {
+      font-size: 180px;
+    }
+  }
+
+  @media only screen and (min-width: 620px) and (max-width: 767px) {
+    p.bio_wrapper {
+      font-size: 140px;
+    }
+  }
+
+  @media only screen and (min-width: 431px) and (max-width: 619px) {
+    p.bio_wrapper {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    p.bio_wrapper {
+        font-size: 60px;
+    } 
+}
+
+@media only screen and (max-width: 1068px) {
+  .bio {
+    background-image: linear-gradient(to top right, rgb(24, 24, 24), rgb(40, 40, 40));
+    height: fit-content;
+}
+
+.bio_reveal {
+  height: 100%;
+}
+
+  .bio_content {
+    flex-direction: column;
+    align-content: space-between;
+  }
+
+  p.bio_paragraph-wrapper {
+    font-size: 16px;
+    padding: 0 0 0 0;
+    width: 100%;
+  }
+
+  .pic_parent {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pic_child {
+    max-width: 500px;
+    width: 100%; 
+    height: auto;
+    margin: 20px 0;
+    padding: 0;
+    filter: grayscale(0%);
+    border-radius: 10px;
+  }
+}

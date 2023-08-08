@@ -1,0 +1,20 @@
+.app_nav_container {
+  width: 100%;
+  position: fixed;
+  text-align: right;
+  z-index: 2;
+  background-color: #232323;
+  padding-bottom: 6px;
+}
+
+.body_container {
+  scroll-snap-stop: always;
+}
+
+.app_body_wrapper {
+  background-image: linear-gradient(to bottom left, rgb(24, 24, 24), rgb(40, 40, 40));
+}
+
+.app_contact_wrapper {
+  background-image: linear-gradient(to bottom left, rgb(24, 24, 24), rgb(40, 40, 40));
+}

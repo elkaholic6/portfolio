@@ -1,0 +1,271 @@
+@keyframes slideup {
+    from {transform: translateY(50px);
+        opacity: 0;}
+    to {transform: translateY(0);
+        opacity: 1;}
+  }
+
+@keyframes shimmer {
+    100% {-webkit-mask-position:left}
+  }
+
+
+.contact {
+    height: 100vh;
+}
+
+
+.shimmer {
+    display:inline-block;
+    mask:linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
+    background-repeat: no-repeat;
+    animation: shimmer 4s infinite;
+  }
+
+  .contact_reveal {
+    animation-name: slideup;
+    animation-duration: 2s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .contact_reveal_inactive {
+    opacity: 0;
+  }
+
+.contact_background_wrapper {
+    color: rgba(75, 73, 73, 0.322);
+    position: absolute;
+    font-weight: 800;
+    font-size: 250px;
+    z-index: 0;
+    padding: 30px 0 0 15px;
+    }
+
+  .contact_container {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 85%;
+    height: 75vh;
+    margin: 0 auto;
+}
+
+.contact_wrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    /* height: 50vh; */
+    position: relative;
+}
+
+.form_container {
+    position: relative;
+    z-index: 10;
+    width: 90%;
+    max-width: 500px;
+}
+
+textarea {
+    resize: none;
+    font-family:Arial, Helvetica, sans-serif;  
+    font-size: 16px;
+  }
+
+.contact_first_line {
+    display: flex;
+    flex-flow: row;
+    height: 25px;
+    padding-bottom: 20px;
+}
+
+.contact_first_line > textarea {
+    flex: 1;
+}
+
+.name_wrapper {
+    height: 25px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.input_name {
+    display: flex;
+    flex: 1;
+    height: 80%;
+    width: 95%;
+    border-radius: 3px;
+}
+
+.email_wrapper {
+    height: 25px;
+    width: 100%;
+}
+
+.input_email{
+    display: flex;
+    flex: 1;
+    height: 80%;
+    width: 95%;
+    border-radius: 3px;
+}
+
+.contact_second_line {
+    display: flex;
+    flex-flow: row;
+    height: 25px;
+    padding-bottom: 20px;
+}
+
+.contact_second_line > textarea {
+    flex: 1;
+}
+
+.subject_wrapper {
+    height: 25px;
+    width: 100%;
+}
+
+.input_subject {
+    display: flex;
+    flex: 1;
+    height: 80%;
+    width: 97.5%;
+    border-radius: 3px;
+}
+
+.contact_third_line {
+    display: flex;
+    flex-flow: row;
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+.contact_third_line > textarea {
+    flex: 1;
+}
+
+.message_wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.input_message {
+    display: flex;
+    flex: 1;
+    height: 90%;
+    width: 97.5%;
+    border-radius: 3px;
+}
+
+.contact_submit_line {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.submit_wrapper {
+padding-right: 7.5px;
+}
+
+.input_submit {
+    cursor: pointer;
+    height: 35px;
+    width: 75px;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: medium;
+    font-weight: 500;
+    background-color: rgb(188, 188, 188);
+    border-radius: 5px;
+    border: none;
+}
+
+.icon-links {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.icon-links_container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 10px 10px 0 10px;
+    margin-bottom: 10px;
+}
+
+.linked-in_wrapper {
+    width: fit-content;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.linked-in {
+    height: 50px;
+    width: 50px;
+    color: white;
+    display: inherit;
+    flex: 1;
+    cursor: pointer;
+}
+
+.github_wrapper {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.github {
+    height: 50px;
+    width: 50px;
+    color: white;
+    display: inherit;
+    flex: 1;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1068px) {
+    .contact_background_wrapper {
+      font-size: 180px;
+    }
+  }
+
+  @media only screen and (min-width: 620px) and (max-width: 767px) {
+    .contact_background_wrapper {
+      font-size: 140px;
+    }
+  }
+
+  @media only screen and (min-width: 431px) and (max-width: 619px) {
+    .contact_background_wrapper {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .contact_background_wrapper {
+        font-size: 60px;
+    } 
+
+    .contact_container {
+        padding-top: 90px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+    }
+}

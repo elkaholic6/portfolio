@@ -1,0 +1,300 @@
+@keyframes slideup {
+    from {transform: translateY(50px);
+        opacity: 0;}
+    to {transform: translateY(0);
+        opacity: 1;}
+}
+
+@keyframes shimmer {
+    100% {-webkit-mask-position:left}
+  }
+
+.body {
+  min-height: 100vh;
+}
+
+.shimmer {
+    display:inline-block;
+    mask:linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
+    background-repeat: no-repeat;
+    animation: shimmer 4s infinite;
+}
+
+.body_portfolio_background {
+    color: rgba(75, 73, 73, 0.322);
+    font-weight: 800;
+    font-size: 250px;
+    position: absolute;
+    z-index: 0;
+    padding: 30px 0 0 15px;
+}
+
+.body_reveal {
+    animation-name: slideup;
+    animation-duration: 2s;
+}
+
+.body_reveal_inactive {
+    opacity: 0;
+}
+
+.page_body_container {
+    padding-top: 130px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.body_wrapper {
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    width: 100%;
+    height: 100%;
+    margin: 100px 0 0;
+}
+
+.body_content {
+  display: flex;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 20px;
+  padding-bottom: 80px;
+}
+
+.placeholder {
+  font-size: larger;
+  color: #F2EEE9;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.InvisibleTreehouseBio {
+  color: #F2EEE9;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.InvisibleTreehouseBio_title {
+  font-weight: 800;
+  font-size: 75px;
+  margin-bottom: 20px;
+}
+
+.InvisibleTreehouseBio_text {
+  font-size: larger;
+}
+
+.body_items {
+    display: flex;
+    flex-flow: column;
+    align-items: end;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.projects_item {
+    display: flex;
+    flex: 1;
+    margin: 0 10px 25px 10px;
+}
+
+.projects_item_link {
+    display: flex;
+    flex-flow: column;
+    width: 400px;
+    background-color: black;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.projects_item_pic-wrap {
+    position: relative;
+    width: 100%;
+    padding-top: 54%;
+    overflow: hidden;
+  }
+
+  .projects_item_pic-wrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    box-sizing: border-box;
+  }
+
+  .projects_item_img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+    cursor: pointer;
+  }
+
+  .projects_item_img:hover {
+    transform: scale(1.1);
+  }
+  
+  .projects_item_info {
+    padding: 20px 20px 15px;
+  }
+  
+  .projects_item_text {
+    cursor: pointer;
+    color: #a4a4a4;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Lucida Console", Courier, monospace;
+  }
+  .projects_item_open_icon {
+    padding-left: 8px;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .body_items {
+      display: flex;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1068px) {
+    .body_portfolio_background {
+      font-size: 180px;
+    }
+  }
+
+  @media only screen and (min-width: 620px) and (max-width: 767px) {
+    .body_portfolio_background {
+      font-size: 140px;
+    }
+
+    .projects_item_link {
+      max-width: 20em;
+      border-radius: 10px;
+    }
+
+    .placeholder {
+      font-size: small;
+      padding-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (min-width: 431px) and (max-width: 619px) {
+    .body_portfolio_background {
+        font-size: 100px;
+    }
+
+    .projects_item_link {
+      max-width: 20em;
+      border-radius: 10px;
+    }
+
+    .placeholder {
+      font-size: small;
+      padding-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .body_portfolio_background {
+        font-size: 60px;
+    } 
+
+    .projects_item_link {
+      max-width: 15em;
+      border-radius: 10px;
+    }
+
+    .projects_item_text {
+      cursor: pointer;
+      color: #a4a4a4;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .placeholder {
+      font-size: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+  .body {
+    height: fit-content;
+  }
+
+  .page_body_container {
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+  .body_content {
+    flex-direction: column-reverse;
+  }
+
+  .info {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 40px 0 0 0;
+  }
+
+  .body_items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects_item {
+    display: flex;
+    flex: 1;
+    padding-bottom: 20px;
+    margin: 0 0 0 0;
+}
+
+  .InvisibleTreehouseBio {
+    height: 100%;
+  }
+
+  .InvisibleTreehouseBio_title {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .InvisibleTreehouseBio_text {
+    font-size: 16px;
+  }
+}

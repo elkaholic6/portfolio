@@ -1,0 +1,92 @@
+@keyframes shimmer {
+    100% {-webkit-mask-position:left}
+  }
+
+.aboutme {
+    align-items: left;
+    position: relative;
+    background-image: linear-gradient(to top right, rgb(24, 24, 24), rgb(40, 40, 40));
+    height: 100vh;
+}
+
+.aboutme_background_hello {
+    padding-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.shimmer {
+    display:inline-block;
+    mask:linear-gradient(-60deg,#000 30%,#0005,#000 70%) right/300% 100%;
+    background-repeat: no-repeat;
+    animation: shimmer 4s infinite;
+}
+
+p.background_hello {
+    color: rgba(75, 73, 73, 0.322);
+    display: flex;
+    justify-content: end;
+    position: relative;
+    font-weight: 800;
+    font-size: 250px;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+
+.aboutme_container {
+    display: flex;
+    z-index: 1;
+    color: rgb(202, 202, 202);
+    font-size: 3ch;
+    justify-content: flex-end;
+    padding: 0 1rem 0 1rem;
+    flex-direction: column;
+    height: 100%;
+}
+
+.aboutme_wrapper {
+    font-family:'Courier New', Courier, monospace;
+    z-index: inherit;
+}
+
+.aboutme_dev_wrapper {
+    font-family:'Courier New', Courier, monospace;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1068px) {
+    p.background_hello {
+      font-size: 180px;
+    }
+  }
+
+  @media only screen and (min-width: 620px) and (max-width: 767px) {
+    p.background_hello {
+      font-size: 140px;
+    }
+  }
+
+@media only screen and (min-width: 431px) and (max-width: 619px) {
+    p.background_hello {
+        font-size: 100px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    p.background_hello {
+        font-size: 60px;
+    } 
+
+    .aboutme_container {
+        /* justify-content: center; */
+    }
+
+    .aboutme_wrapper {
+        font-size: 20px;
+    }
+
+    .aboutme_dev_wrapper {
+        font-size: 20px;
+        padding-bottom: 100px;
+    }
+}
