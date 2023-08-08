@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Wyatt's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Welcome to my portfolio! This repository showcases my projects and skills as a JavaScript and Solidity developer.
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+Visit my portfolio [here](url_to_live_demo).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Projects
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Project 1: Invisible Treehouse
 
-### `npm test`
+- **Description:** A music streaming platform with a built-in NFT marketplace that enable artists to distribute their music worldwide without the need for intermediaries.
+- **Technologies Used:** Solidity, JavaScript, Hardhat, IPFS, React, Redux, Tailwind CSS
+- **Live Demo:** [Invisible Treehouse](https://invisible-treehouse.web.app/)
+- **Repository Link:** [Invisible Treehouse Repo](https://github.com/elkaholic6/Invisible-Treehouse)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Project 2: Block Explorer
 
-### `npm run build`
+- **Description:** A sleek and streamlined block explorer, leveraging Alchemy's powerful SDK to bring users essential blockchain insights at their fingertips.
+- **Technologies Used:** Alchemy's SDK, JavaScript, React, Tailwind CSS.
+- **Live Demo:** [Block Explorer](https://block-explorer-alchemy-sdk.web.app/)
+- **Repository Link:** [Block Explorer Repo](https://github.com/elkaholic6/Block-Explorer-With-Alchemy-SDK)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Skills
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Solidity | JavaScript | React | Hardhat | Foundry | Firestore Database | Firebase Storage | Redux | Node
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## About Me
 
-### `npm run eject`
+Growing up on a farm, I learned the value of perseverance and hard work. Through my journey of self-guided learning, I have harnessed the knowledge of React, Solidity, and JavaScript.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I am a dedicated smart contract security researcher who actively engages in audits on Code4rena individually and on teams. These challenges both teach me and keep me up-to-date on the latest smart contract best practices.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+My commitment to building secure web3 technologies remains at the forefront of my work. This reflects my passion for delivering high-quality and secure solutions in the blockchain space.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contact
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Email:** wyattchamberlin6@gmail.com
+- **LinkedIn:** [Wyatt Chamberlin](https://www.linkedin.com/in/wyatt-chamberlin-ab3b14100/)
