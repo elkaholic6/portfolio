@@ -236,6 +236,21 @@ padding-right: 7.5px;
     cursor: pointer;
 }
 
+.medium_wrapper {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.medium {
+    height: 50px;
+    width: 50px;
+    color: white;
+    display: inherit;
+    flex: 1;
+    cursor: pointer;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1068px) {
     .contact_background_wrapper {
       font-size: 180px;
