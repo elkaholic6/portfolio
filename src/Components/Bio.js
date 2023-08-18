@@ -31,15 +31,16 @@ function Bio() {
             <div ref={myRef} className={`${visible ? 'bio_reveal' : 'bio_reveal_inactive'}`}>
               <div className='bio_content'>
                 <p className='bio_paragraph-wrapper'>
-                  Growing up on a farm, I learned the value of perseverance and hard work. Through my journey of self-guided 
-                  learning, I have harnessed the knowledge of React, Solidity, and JavaScript.<br />
+                  Growing up on a farm, I learned the value of perseverance and hard work, 
+                  enabling me to teach myself how to program in React, Solidity, and JavaScript.<br />
                   <br />
-                  I am a dedicated smart contract security researcher who actively engages in audits on Code4rena individually and on teams. 
-                  These challenges both teach me and keep me up-to-date on the latest smart contract best practices.<br />
+                  Additionally, I am a dedicated smart contract security researcher who actively 
+                  engages in audits on Code4rena, individually and on teams.<br />
                   <br />
-                  My commitment to 
-                  building secure web3 technologies remains at the forefront of my work. This reflects my passion 
-                  for delivering high-quality and secure solutions in the blockchain space.
+                  Building secure web3 technologies remains at the forefront of my work; 
+                  however, my passion for this industry does not stop there. I am eager to lend 
+                  a hand to anyone building or willing to learn more about the Ethereum ecosystem 
+                  to further contribute to its overall success.
                 </p>
                 <div className='face_pic'>
                   <div className='pic_parent'>
