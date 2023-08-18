@@ -6,7 +6,7 @@ Welcome to my portfolio! This repository showcases my projects and skills as a J
 
 ## Live Demo
 
-Visit my portfolio [here](url_to_live_demo).
+Visit my portfolio [here](https://wyattchamberlin.xyz/).
 
 ## Projects
 
@@ -26,7 +26,7 @@ Visit my portfolio [here](url_to_live_demo).
 
 ## Skills
 
-- Solidity | JavaScript | React | Hardhat | Foundry | Firestore Database | Firebase Storage | Redux | Node
+- Solidity | JavaScript | React | Hardhat | Foundry | Firestore Database | Firebase Storage | Redux | Node | IPFS
 
 ## About Me
 
